@@ -15,7 +15,7 @@ body {
 }
 
 body {
-  background-color: #2d2d37;
+  background-color: #212144;
 }
 
 h1,
@@ -46,11 +46,11 @@ h1 {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
 }
 .todo {
-  background-color: #e64944;
+  background-color: #585c74;
   width: 45%;
   text-align: left;
   margin: 4px 0;
@@ -58,7 +58,7 @@ h1 {
 }
 
 .todo.completed {
-  background-color: #d17d7c;
+  background-color: #3e6149;
   text-decoration: line-through;
 }
 form {
@@ -79,7 +79,7 @@ form > input {
 }
 
 button {
-  background-color: #e64944;
+  background-color: #585c74;
   border: 1px solid #e64944;
   color: white;
   font-size: 16px;
@@ -93,4 +93,5 @@ input::placeholder {
 
 .clear-btn {
   margin-top: 16px;
+  background-color: #3e6149;
 }

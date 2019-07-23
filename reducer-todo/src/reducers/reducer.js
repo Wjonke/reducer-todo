@@ -1,22 +1,30 @@
+/////////initial state Below for todo list///////////
+//this is where I would do my axios call to get init state otherwise.
+
 export const initialState = {
   todos: [
     {
       name: 'Learn about reducers',
       completed: false,
-      id: 123
+      id: '000001'
     },
     {
       name: 'Get ready for build week',
       completed: false,
-      id: 123
+      id: '000002'
     },
     {
       name: 'Take Breaks!',
       completed: false,
-      id: 123
+      id: '000003'
     },
   ]
 };
+
+
+
+//////////////////Reducer(s) Below//////////////////////
+
 
 export const reducer = (state, action) => {
   switch (action.type) {

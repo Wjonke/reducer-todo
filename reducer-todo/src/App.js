@@ -2,18 +2,16 @@ import React, { useReducer } from 'react';
 
 import { reducer, initialState } from './reducers/reducer';
 import {TodoList} from './components/TodoList';
-// import {AddTodo} from './components/AddTodo';
-
-
+import {AddTodo} from './components/AddTodo';
 
 import './App.css';
+
 
 const App =() => {
 
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  const addTodo = (event, todo) => {
-    event.preventDefault();
+  const addTodo = (todo) => {
     dispatch({ type: 'ADD_TODO', payload: todo });
   };
 
@@ -31,7 +29,7 @@ const App =() => {
   <div className="App">
     <div className="header">
         <h1>Todo List</h1>
-        {/* <AddTodo addTodo={addTodo} /> */}
+        <AddTodo addTodo={addTodo} />
       </div>
       <TodoList
         todos={state.todos}
